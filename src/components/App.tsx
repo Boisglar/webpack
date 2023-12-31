@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import './App.scss';
+import classes from './App.module.scss';
+import { Link, Outlet } from 'react-router-dom';
 
 export const App = () => {
   const [count, setCount] = useState(0);
@@ -8,10 +9,14 @@ export const App = () => {
 
   return (
     <div>
-      <div>{count}</div>
-      <button onClick={handlerCount}>
+      <Link to={'/about'}>about</Link>
+      <br />
+      <Link to={'/shop'}>Shop</Link>
+      <div className={classes.value}>{count}</div>
+      <button className={classes.button} onClick={handlerCount}>
         <span>button</span>
       </button>
+      <Outlet />
     </div>
   );
 };
