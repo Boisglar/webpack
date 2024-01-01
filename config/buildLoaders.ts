@@ -3,10 +3,6 @@ import { BuildOptions } from "./types/types";
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
 
 
-
-
-
-
 export function buildLoaders(options: BuildOptions): ModuleOptions["rules"] {
 
     const isDev = options.mode === "development"
@@ -19,6 +15,34 @@ export function buildLoaders(options: BuildOptions): ModuleOptions["rules"] {
                 localIdentName: isDev ? "[path][name]__[local]" : "[hash:base64:8]"
             }
         }
+    }
+
+    const assetsLoader = {
+        test: /\.(png|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
+    }
+
+    // для работы с svr как с компонентом
+    const svgrLoaders = {
+        test: /\.svg$/,
+        use: [
+            {
+                loader: '@svgr/webpack',
+                options: {
+                    icon: true,
+                    svgoConfig: {
+                        plugins: [
+                            {
+                                name: "convertColors",
+                                params: {
+                                    currentColor: true
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        ],
     }
 
 
@@ -38,7 +62,9 @@ export function buildLoaders(options: BuildOptions): ModuleOptions["rules"] {
     }
 
     return [
+        assetsLoader,
         scssLoaders,
         tsLoaders,
+        svgrLoaders
     ]
 }
