@@ -3,36 +3,6 @@ import React from 'react';
 const Shop = () => {
   return (
     <div>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ducimus ad vero deserunt
-      est aut velit, recusandae rerum atque harum voluptatibus. Consectetur, odit numquam. Deleniti
-      odit ipsum aperiam pariatur non? Consequatur vel incidunt unde reiciendis, ut, velit
-      architecto fuga corrupti aliquid a ad, omnis cupiditate officia ipsa enim labore sequi cum
-      sapiente commodi optio voluptas suscipit iste? Eligendi, voluptatibus dolor. Incidunt officia
-      dolorum earum. Maiores aut asperiores tempore officiis corrupti nisi. Ex, voluptatibus!
-      Voluptatibus molestiae dolorem repellendus. Nisi aperiam sed, distinctio voluptate non optio
-      dolorem quis vero iste quod quibusdam. Ex aperiam temporibus, porro quisquam minima, natus,
-      quas fuga illo labore tenetur suscipit totam? Asperiores doloribus reprehenderit, minus, amet
-      aspernatur iusto minima voluptatem, dolor ipsam ullam adipisci voluptatum sequi nam. Pariatur
-      beatae quos error laudantium molestiae nemo! Architecto tenetur soluta aperiam perferendis
-      libero nisi quidem quae eveniet consequuntur, quibusdam, facere sint necessitatibus voluptatum
-      vel asperiores. Dolor tempore vitae nam maiores. Perferendis in illum delectus distinctio
-      ducimus porro fugit accusantium molestias beatae odio? Pariatur quae esse magnam, nulla
-      nesciunt quas, modi eaque accusamus doloribus possimus in, fugit tenetur eligendi adipisci
-      sit! Consequuntur explicabo earum ipsa dolorem quidem eaque saepe accusamus commodi delectus
-      eligendi modi unde quia assumenda, ea et doloribus fugiat odio vitae optio a laboriosam?
-      Voluptatem incidunt dignissimos repellat! Corrupti. Quam sint porro similique est ipsam, dolor
-      cum iste aliquam quasi mollitia excepturi illum eos nesciunt consequuntur, quaerat voluptatum
-      tempora assumenda? Aperiam corrupti numquam id nisi voluptas rem accusantium ut! Eius fuga
-      mollitia, cum culpa laborum, ullam eveniet, perferendis repellendus quam debitis ad amet rerum
-      pariatur autem voluptas atque repellat enim quo quos? Maiores nam labore illo. Soluta,
-      nesciunt incidunt! Neque perspiciatis optio non quam. Velit, repudiandae alias accusantium
-      quam numquam adipisci, id laudantium quos dolor aliquam nisi dolore nam dolores blanditiis
-      dolorem perferendis quod ipsam aspernatur nemo. Maiores, vel. Error consectetur aliquam natus
-      amet dolorem quia, eligendi nam exercitationem dignissimos ratione aut quod est necessitatibus
-      quaerat vitae doloremque harum minus sapiente veniam? Quos odio cumque, omnis incidunt
-      doloribus at? Harum aut dignissimos ducimus iure consequuntur vero? Laborum placeat iure
-      pariatur saepe aliquid, perspiciatis vitae. Illum maxime, iure nihil ad itaque nulla numquam
-      doloremque enim adipisci tempore ratione, aspernatur modi! Blanditiis sit odio hic consequatur
       dicta nostrum quia fugiat placeat enim doloribus reiciendis laboriosam facere magnam fugit
       repellendus sunt nihil, tenetur asperiores quidem officia rem reprehenderit. Autem quas porro
       sequi. Ducimus sint, alias tempore molestias repellendus neque eum asperiores dignissimos amet
