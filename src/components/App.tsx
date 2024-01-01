@@ -12,8 +12,21 @@ export const App = () => {
 
   const handlerCount = () => setCount((prev) => prev + 1);
 
+  if (__PLATFORM__ === 'desktop') {
+    <h1>isDesktop platform</h1>;
+  }
+
+  if (__PLATFORM__ === 'mobile') {
+    <h1>isMobile platform</h1>;
+  }
+
+  if (__ENV__ === 'development') {
+    // addDevtools()
+  }
+
   return (
     <div>
+      <h1>Платформа {__PLATFORM__}</h1>
       <Link to={'/about'}>about</Link>
       <br />
       <Link to={'/shop'}>Shop</Link>

@@ -1,7 +1,7 @@
 
 import type { Configuration as DevServerConfiguration } from "webpack-dev-server";
 
-import webpack from "webpack";
+import webpack, { DefinePlugin } from "webpack";
 
 import { BuildOptions } from "./types/types";
 import HtmlWebpackPlugin from "html-webpack-plugin"
@@ -17,6 +17,10 @@ export function buildPlugins(options: BuildOptions): Configuration["plugins"] {
 
     const plugins: Configuration["plugins"] = [
         new HtmlWebpackPlugin({ template: options.paths.html }),
+        new DefinePlugin({
+            __PLATFORM__: JSON.stringify(options.platform),
+            __ENV__: JSON.stringify(options.mode)
+        })
     ]
 
     if (isDev) {
