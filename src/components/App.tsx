@@ -7,8 +7,14 @@ import imagePng from '@/assets/images.png';
 import imageJpeg from '@/assets/Без названия.jpeg';
 import ImageCvg from '@/assets/svg-icon.svg';
 
+function TODO(a: number) {
+  console.log('todo function');
+}
+
 export const App = () => {
   const [count, setCount] = useState(0);
+
+  TODO(12345);
 
   const handlerCount = () => setCount((prev) => prev + 1);
 
