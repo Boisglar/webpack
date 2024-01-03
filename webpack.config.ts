@@ -1,8 +1,8 @@
 import path from "path";
 import webpack from "webpack"
 
-import { buildWebpack } from "./config/buildWebpack";
-import { BuildMode, BuildPaths, BuildPlatform } from "./config/types/types";
+import { buildWebpack } from "./config/src/buildWebpack";
+import { BuildMode, BuildPaths, BuildPlatform } from "./config/src/types/types";
 
 
 
