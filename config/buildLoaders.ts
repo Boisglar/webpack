@@ -2,6 +2,7 @@ import { ModuleOptions } from "webpack";
 import { BuildOptions } from "./types/types";
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
 import ReactRefreshTypeScript from 'react-refresh-typescript';
+import { buildBabelLoader } from "./babel/buildBabelLoader";
 
 
 
@@ -73,10 +74,13 @@ export function buildLoaders(options: BuildOptions): ModuleOptions["rules"] {
         ],
     }
 
+    const babelLoaders = buildBabelLoader(options)
+
     return [
         assetsLoader,
         scssLoaders,
-        tsLoaders,
+        // tsLoaders,
+        babelLoaders,
         svgrLoaders
     ]
 }

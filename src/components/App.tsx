@@ -7,14 +7,14 @@ import imagePng from '@/assets/images.png';
 import imageJpeg from '@/assets/Без названия.jpeg';
 import ImageCvg from '@/assets/svg-icon.svg';
 
-function TODO(a: number) {
-  console.log('todo function');
+function TODO() {
+  throw new Error();
 }
 
 export const App = () => {
   const [count, setCount] = useState(0);
 
-  TODO(12345);
+  TODO();
 
   const handlerCount = () => setCount((prev) => prev + 1);
 
@@ -31,8 +31,8 @@ export const App = () => {
   }
 
   return (
-    <div>
-      <h1>Платформа {__PLATFORM__}</h1>
+    <div data-testid={'App'}>
+      <h1 data-testid={'Platform'}>Платформа {__PLATFORM__}</h1>
       <Link to={'/about'}>about</Link>
       <br />
       <Link to={'/shop'}>Shop</Link>
